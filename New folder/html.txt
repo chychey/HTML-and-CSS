@@ -1,0 +1,11 @@
+<html>
+    <title>Do you want to adopt a puppy?</title>
+    <p>We have the friendliest and cutest picks of the litter</p>
+    <form action="" method="post">
+        <div>
+        <input class="rsvp" type="text" value="First Name">
+        <input class="rsvp" type="text" value="Last Name">
+        <input class="rsvp" type="text" value="Email Address">
+        <input class="rsvp" type="text" value="Phone Number">
+        </div>
+</html>
