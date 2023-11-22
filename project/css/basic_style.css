@@ -26,6 +26,7 @@ SELECT ALL SQUARES IN THE ARRAY
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
+    transition: transform .5s ease-in-out;
 }
 
 /*-----------------------------------------
@@ -65,16 +66,16 @@ HOVER< TRANSLATE & TRANSFORM EFFECTS
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
 }
-.squares:nth-child(1):hover{
+.squares:nth-child(1):hover {
     background: #13b4ff;
 }
-.squares:nth-child(2):hover{
+.squares:nth-child(2):hover {
     background: #d861af;
 }
-.squares:nth-child(3):hover{
+.squares:nth-child(3):hover {
     background: #81205f;
 }
-.squares:nth-child(4):hover{
+.squares:nth-child(4):hover {
     background: #77b800
 }
 
@@ -84,10 +85,12 @@ ANIMATION EFFECT
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
-    background-image: url("../images/icons1.png")    }
-}
-50% {
-    transform: translateY(300px);
+    background-image: url("../images/icons2.png")
+  }
+  50% {
+     transform: translateY(300px);
+  }
+
 }
 
 body {
@@ -135,7 +138,7 @@ body {
     color: #fff;
 }
 
-.menu li:hover ul{
+.menu li:hover ul {
     display: block;
     opacity: 1;
     /*While hovered, drop down-menu appears
