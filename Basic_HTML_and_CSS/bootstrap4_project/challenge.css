@@ -1,3 +1,25 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
 .container {
     position: relative;
     text-align: center;
@@ -7,14 +29,14 @@
  
   
   /* Top left text */
-  .top-left {
+.top-left {
     position: absolute;
     top: 20px;
     left: 30px;
   }
   
   /* Top right text */
-  .top-right {
+.top-right {
     position: absolute;
     top: 8px;
     right: 16px;
@@ -116,25 +138,67 @@ p {
     color: orangered;
   }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+  #column1 {
+    color: green;
+    background-color: gray;
+    height: 200px;
+    width: 40%;
+  }
+  
+#column2 {
+  color:blueviolet;
+  background-color: black;
+  height: 200px;
+  width: 40%;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
+p:hover {
+  background-color:aquamarine;
+}
+
+.container {
+  position: relative;
   width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-  
-  
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    background-color: red;
+  }
+}
+
