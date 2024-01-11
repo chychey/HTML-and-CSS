@@ -17,15 +17,15 @@ Bootstrap components including a navbar, jumbotron, form, cards, and dropdowns.
 
 <strong>JavaScript Projects</strong>
 
-<title>Pizza Menu</title>
+<strong>Pizza Menu</strong>
 
 <p>This project is a menu created to order pizza with diffrent toppings. It takes the order and caluclates the price.</p>
 
-<title>Tic-Tac-Toe Game</title>
+<strong>Tic-Tac-Toe Game</strong>
 
 <p>This Tic Tac Toe game was created for two players, each player can decide which token each player wants to use and the winner is celebrated with music</p>
 
-<title>Calculator</title>
+<strong>Calculator</strong>
 
 <p>A basic 4 function calculator. Users can add, subtract, multiply, and divide.
 
